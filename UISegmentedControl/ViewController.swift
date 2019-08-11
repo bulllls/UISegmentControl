@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         label.isHidden = true
-        label.font = label.font.withSize(35)
+        label.font = label.font.withSize(26)
         label.textAlignment = .center
         label.numberOfLines = 2
         
