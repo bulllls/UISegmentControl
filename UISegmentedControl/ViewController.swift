@@ -90,7 +90,7 @@ class ViewController: UIViewController {
         let dateFormatter =  DateFormatter()
         
         dateFormatter.dateStyle = .full
-        
+        dateFormatter.locale = Locale(identifier: "be_BY")
         let dateValue = dateFormatter.string(from: sender.date)
         
         label.text = dateValue

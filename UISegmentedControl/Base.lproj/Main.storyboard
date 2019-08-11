@@ -36,9 +36,9 @@
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSc-2t-aOr">
-                                        <rect key="frame" x="25" y="110" width="364" height="21"/>
+                                        <rect key="frame" x="35" y="110" width="344" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="364" id="xAR-kv-spG"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="344" id="3mJ-Bq-Hfj"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -90,7 +90,6 @@
                                 <constraints>
                                     <constraint firstItem="x5z-DE-udk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nMH-AY-RVO" secondAttribute="leading" constant="20" symbolic="YES" id="1S2-BM-OZj"/>
                                     <constraint firstItem="xj4-i5-Bf6" firstAttribute="firstBaseline" secondItem="DSc-2t-aOr" secondAttribute="baseline" constant="79.5" id="393-HS-U1j"/>
-                                    <constraint firstItem="DSc-2t-aOr" firstAttribute="top" secondItem="4be-um-qJs" secondAttribute="bottom" constant="63" id="9SJ-Is-wbf"/>
                                     <constraint firstItem="iZb-ez-KYu" firstAttribute="leading" secondItem="nMH-AY-RVO" secondAttribute="leading" id="Ftg-aY-mf8"/>
                                     <constraint firstItem="x5z-DE-udk" firstAttribute="top" secondItem="hoY-cy-ady" secondAttribute="bottom" constant="25" id="Kv5-Tq-wgP"/>
                                     <constraint firstItem="DSc-2t-aOr" firstAttribute="centerX" secondItem="nMH-AY-RVO" secondAttribute="centerX" id="L21-3r-4PS"/>
@@ -100,12 +99,14 @@
                                     <constraint firstItem="hoY-cy-ady" firstAttribute="top" secondItem="xj4-i5-Bf6" secondAttribute="bottom" constant="70" id="egK-Yg-cXj"/>
                                     <constraint firstAttribute="trailing" secondItem="x5z-DE-udk" secondAttribute="trailing" constant="40" id="fyW-7j-4dH"/>
                                     <constraint firstItem="4be-um-qJs" firstAttribute="centerX" secondItem="DSc-2t-aOr" secondAttribute="centerX" id="gXM-E2-lEh"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DSc-2t-aOr" secondAttribute="trailing" id="hAs-5e-aoz"/>
                                     <constraint firstItem="xj4-i5-Bf6" firstAttribute="centerX" secondItem="hoY-cy-ady" secondAttribute="centerX" id="hNn-46-PXh"/>
                                     <constraint firstItem="iZb-ez-KYu" firstAttribute="centerX" secondItem="hoY-cy-ady" secondAttribute="centerX" id="tiw-yT-FDC"/>
                                     <constraint firstItem="4be-um-qJs" firstAttribute="top" secondItem="nMH-AY-RVO" secondAttribute="top" constant="20" id="u4C-fY-B9e"/>
                                     <constraint firstAttribute="bottom" secondItem="iZb-ez-KYu" secondAttribute="bottom" constant="103" id="uqJ-fk-zcC"/>
                                     <constraint firstItem="iZb-ez-KYu" firstAttribute="top" secondItem="nMH-AY-RVO" secondAttribute="top" constant="527" id="vHW-D4-dwT"/>
                                     <constraint firstItem="DSc-2t-aOr" firstAttribute="top" secondItem="4be-um-qJs" secondAttribute="bottom" constant="63" id="xUZ-ug-XmN"/>
+                                    <constraint firstItem="DSc-2t-aOr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nMH-AY-RVO" secondAttribute="leading" id="xjw-Ao-0rv"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -130,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+            <point key="canvasLocation" x="46.399999999999999" y="20.689655172413794"/>
         </scene>
     </scenes>
 </document>
