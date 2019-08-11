@@ -81,7 +81,6 @@
                                         <date key="date" timeIntervalSinceReferenceDate="587223344.92525899">
                                             <!--2019-08-11 13:35:44 +0000-->
                                         </date>
-                                        <locale key="locale" localeIdentifier="be_BY"/>
                                         <connections>
                                             <action selector="changeDate:" destination="BYZ-38-t0r" eventType="valueChanged" id="xOK-pi-nc9"/>
                                         </connections>

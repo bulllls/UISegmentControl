@@ -34,6 +34,9 @@ class ViewController: UIViewController {
         slider.maximumTrackTintColor = .red
         slider.thumbTintColor = .blue
         
+        datePicker.locale = Locale(identifier: "be_BY")
+        
+        
     }
     @IBAction func choiseSegment(_ sender: UISegmentedControl) {
         
