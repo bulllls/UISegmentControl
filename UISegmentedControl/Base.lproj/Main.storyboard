@@ -46,17 +46,36 @@
                                     <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="WPb-Rz-hFu"/>
                                 </connections>
                             </slider>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter your name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hoY-cy-ady">
+                                <rect key="frame" x="35" y="372" width="344" height="30"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5z-DE-udk">
+                                <rect key="frame" x="35" y="427" width="344" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="donePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwn-RT-Epa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.44091010093688965" green="0.96845871210098267" blue="0.72736680507659912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xj4-i5-Bf6" secondAttribute="trailing" constant="115" id="Nmg-sM-lzZ"/>
+                            <constraint firstItem="hoY-cy-ady" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Phb-S3-1fg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4be-um-qJs" secondAttribute="trailing" constant="115" id="RE5-qH-pW4"/>
                             <constraint firstItem="DSc-2t-aOr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="UXt-Jy-tKB"/>
                             <constraint firstItem="xj4-i5-Bf6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="ZhM-nQ-aon"/>
                             <constraint firstItem="4be-um-qJs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="Zjo-fU-deA"/>
+                            <constraint firstItem="x5z-DE-udk" firstAttribute="top" secondItem="hoY-cy-ady" secondAttribute="bottom" constant="25" id="cGr-qe-ZsV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x5z-DE-udk" secondAttribute="trailing" constant="35" id="emO-zI-izt"/>
                             <constraint firstItem="xj4-i5-Bf6" firstAttribute="firstBaseline" secondItem="DSc-2t-aOr" secondAttribute="baseline" constant="79.5" id="hUD-PO-V2e"/>
                             <constraint firstItem="DSc-2t-aOr" firstAttribute="top" secondItem="4be-um-qJs" secondAttribute="bottom" constant="63" id="hdg-OU-hYx"/>
                             <constraint firstItem="4be-um-qJs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="kTn-Eb-a9J"/>
+                            <constraint firstItem="hoY-cy-ady" firstAttribute="top" secondItem="xj4-i5-Bf6" secondAttribute="bottom" constant="70" id="tBH-tV-Azh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hoY-cy-ady" secondAttribute="trailing" constant="35" id="uUY-4j-7HR"/>
+                            <constraint firstItem="x5z-DE-udk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="wMV-OJ-WHm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DSc-2t-aOr" secondAttribute="trailing" constant="15" id="yuq-rC-lCu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -65,6 +84,7 @@
                         <outlet property="label" destination="DSc-2t-aOr" id="eh2-Ye-8oY"/>
                         <outlet property="segmentedControl" destination="4be-um-qJs" id="Zxv-89-7WC"/>
                         <outlet property="slider" destination="xj4-i5-Bf6" id="WfB-fX-yO9"/>
+                        <outlet property="textField" destination="hoY-cy-ady" id="RZe-7R-IHU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,5 +60,11 @@ class ViewController: UIViewController {
         self.view.backgroundColor = backgrandColor?.withAlphaComponent(CGFloat(sender.value))
         
     }
+    
+    @IBAction func donePressed(_ sender: UIButton) {
+        
+        
+    }
+    
 }
 
