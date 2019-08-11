@@ -32,7 +32,7 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSc-2t-aOr">
-                                <rect key="frame" x="115" y="177" width="184" height="21"/>
+                                <rect key="frame" x="15" y="177" width="384" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,11 +41,11 @@
                         <color key="backgroundColor" red="0.44091010093688965" green="0.96845871210098267" blue="0.72736680507659912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4be-um-qJs" secondAttribute="trailing" constant="115" id="RE5-qH-pW4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DSc-2t-aOr" secondAttribute="trailing" constant="115" id="RKn-bu-nJm"/>
-                            <constraint firstItem="DSc-2t-aOr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="WWh-UU-pOy"/>
+                            <constraint firstItem="DSc-2t-aOr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="UXt-Jy-tKB"/>
                             <constraint firstItem="4be-um-qJs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="Zjo-fU-deA"/>
                             <constraint firstItem="DSc-2t-aOr" firstAttribute="top" secondItem="4be-um-qJs" secondAttribute="bottom" constant="63" id="hdg-OU-hYx"/>
                             <constraint firstItem="4be-um-qJs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="kTn-Eb-a9J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DSc-2t-aOr" secondAttribute="trailing" constant="15" id="yuq-rC-lCu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
