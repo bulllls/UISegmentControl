@@ -73,22 +73,38 @@
                                             <action selector="donePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwn-RT-Epa"/>
                                         </connections>
                                     </button>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="iZb-ez-KYu">
+                                        <rect key="frame" x="0.0" y="527" width="414" height="216"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="216" id="CKv-Qa-Cmy"/>
+                                        </constraints>
+                                        <date key="date" timeIntervalSinceReferenceDate="587223344.92525899">
+                                            <!--2019-08-11 13:35:44 +0000-->
+                                        </date>
+                                        <locale key="locale" localeIdentifier="be_BY"/>
+                                        <connections>
+                                            <action selector="changeDate:" destination="BYZ-38-t0r" eventType="valueChanged" id="xOK-pi-nc9"/>
+                                        </connections>
+                                    </datePicker>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="x5z-DE-udk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nMH-AY-RVO" secondAttribute="leading" constant="20" symbolic="YES" id="1S2-BM-OZj"/>
                                     <constraint firstItem="xj4-i5-Bf6" firstAttribute="firstBaseline" secondItem="DSc-2t-aOr" secondAttribute="baseline" constant="79.5" id="393-HS-U1j"/>
                                     <constraint firstItem="DSc-2t-aOr" firstAttribute="top" secondItem="4be-um-qJs" secondAttribute="bottom" constant="63" id="9SJ-Is-wbf"/>
+                                    <constraint firstItem="iZb-ez-KYu" firstAttribute="leading" secondItem="nMH-AY-RVO" secondAttribute="leading" id="Ftg-aY-mf8"/>
                                     <constraint firstItem="x5z-DE-udk" firstAttribute="top" secondItem="hoY-cy-ady" secondAttribute="bottom" constant="25" id="Kv5-Tq-wgP"/>
                                     <constraint firstItem="DSc-2t-aOr" firstAttribute="centerX" secondItem="nMH-AY-RVO" secondAttribute="centerX" id="L21-3r-4PS"/>
                                     <constraint firstItem="4be-um-qJs" firstAttribute="centerX" secondItem="nMH-AY-RVO" secondAttribute="centerX" id="L83-N1-LWv"/>
-                                    <constraint firstAttribute="bottom" secondItem="x5z-DE-udk" secondAttribute="bottom" constant="394" id="MD7-bJ-Pms"/>
                                     <constraint firstItem="x5z-DE-udk" firstAttribute="leading" secondItem="hoY-cy-ady" secondAttribute="leading" id="Wlj-Iu-eGJ"/>
                                     <constraint firstItem="xj4-i5-Bf6" firstAttribute="centerX" secondItem="nMH-AY-RVO" secondAttribute="centerX" id="dGe-7k-JhT"/>
                                     <constraint firstItem="hoY-cy-ady" firstAttribute="top" secondItem="xj4-i5-Bf6" secondAttribute="bottom" constant="70" id="egK-Yg-cXj"/>
                                     <constraint firstAttribute="trailing" secondItem="x5z-DE-udk" secondAttribute="trailing" constant="40" id="fyW-7j-4dH"/>
                                     <constraint firstItem="4be-um-qJs" firstAttribute="centerX" secondItem="DSc-2t-aOr" secondAttribute="centerX" id="gXM-E2-lEh"/>
                                     <constraint firstItem="xj4-i5-Bf6" firstAttribute="centerX" secondItem="hoY-cy-ady" secondAttribute="centerX" id="hNn-46-PXh"/>
+                                    <constraint firstItem="iZb-ez-KYu" firstAttribute="centerX" secondItem="hoY-cy-ady" secondAttribute="centerX" id="tiw-yT-FDC"/>
                                     <constraint firstItem="4be-um-qJs" firstAttribute="top" secondItem="nMH-AY-RVO" secondAttribute="top" constant="20" id="u4C-fY-B9e"/>
+                                    <constraint firstAttribute="bottom" secondItem="iZb-ez-KYu" secondAttribute="bottom" constant="103" id="uqJ-fk-zcC"/>
+                                    <constraint firstItem="iZb-ez-KYu" firstAttribute="top" secondItem="nMH-AY-RVO" secondAttribute="top" constant="527" id="vHW-D4-dwT"/>
                                     <constraint firstItem="DSc-2t-aOr" firstAttribute="top" secondItem="4be-um-qJs" secondAttribute="bottom" constant="63" id="xUZ-ug-XmN"/>
                                 </constraints>
                             </scrollView>
@@ -105,6 +121,7 @@
                     </view>
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
+                        <outlet property="datePicker" destination="iZb-ez-KYu" id="3Hk-9L-e8Y"/>
                         <outlet property="label" destination="DSc-2t-aOr" id="eh2-Ye-8oY"/>
                         <outlet property="segmentedControl" destination="4be-um-qJs" id="Zxv-89-7WC"/>
                         <outlet property="slider" destination="xj4-i5-Bf6" id="WfB-fX-yO9"/>
