@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         label.textAlignment = .center
         label.numberOfLines = 2
         
+        segmentedControl.insertSegment(withTitle: "Third", at: 2, animated: true)
     }
     @IBAction func choiseSegment(_ sender: UISegmentedControl) {
         
