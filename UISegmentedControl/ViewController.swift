@@ -16,7 +16,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        label.isHidden = true
+        label.font = label.font.withSize(35)
+        label.textAlignment = .center
+        label.numberOfLines = 2
         
     }
     @IBAction func choiseSegment(_ sender: UISegmentedControl) {
