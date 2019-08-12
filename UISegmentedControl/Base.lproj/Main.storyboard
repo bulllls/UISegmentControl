@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMH-AY-RVO">
-                                <rect key="frame" x="0.0" y="43" width="414" height="846"/>
+                                <rect key="frame" x="-1" y="43" width="414" height="846"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4be-um-qJs">
                                         <rect key="frame" x="115" y="20" width="184" height="28"/>
@@ -85,25 +85,50 @@
                                             <action selector="changeDate:" destination="BYZ-38-t0r" eventType="valueChanged" id="xOK-pi-nc9"/>
                                         </connections>
                                     </datePicker>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Ld-UW-ZD7">
+                                        <rect key="frame" x="328" y="787" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.83809464440000003" green="0.3743906246" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="thumbTintColor" red="0.23793842670000001" green="0.92623696129999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="emv-8u-mYD"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Скрыть все элементы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KoQ-XA-DmZ">
+                                        <rect key="frame" x="35" y="787" width="264" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="264" id="DD2-DN-15q"/>
+                                            <constraint firstAttribute="height" constant="31" id="i3k-MI-dMB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="x5z-DE-udk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nMH-AY-RVO" secondAttribute="leading" constant="20" symbolic="YES" id="1S2-BM-OZj"/>
                                     <constraint firstItem="xj4-i5-Bf6" firstAttribute="firstBaseline" secondItem="DSc-2t-aOr" secondAttribute="baseline" constant="79.5" id="393-HS-U1j"/>
                                     <constraint firstItem="iZb-ez-KYu" firstAttribute="leading" secondItem="nMH-AY-RVO" secondAttribute="leading" id="Ftg-aY-mf8"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Ld-UW-ZD7" secondAttribute="bottom" constant="28" id="FxZ-pe-URL"/>
                                     <constraint firstItem="x5z-DE-udk" firstAttribute="top" secondItem="hoY-cy-ady" secondAttribute="bottom" constant="25" id="Kv5-Tq-wgP"/>
                                     <constraint firstItem="DSc-2t-aOr" firstAttribute="centerX" secondItem="nMH-AY-RVO" secondAttribute="centerX" id="L21-3r-4PS"/>
                                     <constraint firstItem="4be-um-qJs" firstAttribute="centerX" secondItem="nMH-AY-RVO" secondAttribute="centerX" id="L83-N1-LWv"/>
+                                    <constraint firstItem="8Ld-UW-ZD7" firstAttribute="top" secondItem="iZb-ez-KYu" secondAttribute="bottom" constant="44" id="Vmv-2i-Cek"/>
                                     <constraint firstItem="x5z-DE-udk" firstAttribute="leading" secondItem="hoY-cy-ady" secondAttribute="leading" id="Wlj-Iu-eGJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Ld-UW-ZD7" secondAttribute="trailing" constant="37" id="agm-ka-phM"/>
                                     <constraint firstItem="xj4-i5-Bf6" firstAttribute="centerX" secondItem="nMH-AY-RVO" secondAttribute="centerX" id="dGe-7k-JhT"/>
                                     <constraint firstItem="hoY-cy-ady" firstAttribute="top" secondItem="xj4-i5-Bf6" secondAttribute="bottom" constant="70" id="egK-Yg-cXj"/>
-                                    <constraint firstAttribute="trailing" secondItem="x5z-DE-udk" secondAttribute="trailing" constant="40" id="fyW-7j-4dH"/>
+                                    <constraint firstAttribute="trailing" secondItem="x5z-DE-udk" secondAttribute="trailing" constant="35" id="fyW-7j-4dH"/>
                                     <constraint firstItem="4be-um-qJs" firstAttribute="centerX" secondItem="DSc-2t-aOr" secondAttribute="centerX" id="gXM-E2-lEh"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DSc-2t-aOr" secondAttribute="trailing" id="hAs-5e-aoz"/>
                                     <constraint firstItem="xj4-i5-Bf6" firstAttribute="centerX" secondItem="hoY-cy-ady" secondAttribute="centerX" id="hNn-46-PXh"/>
                                     <constraint firstItem="iZb-ez-KYu" firstAttribute="centerX" secondItem="hoY-cy-ady" secondAttribute="centerX" id="tiw-yT-FDC"/>
                                     <constraint firstItem="4be-um-qJs" firstAttribute="top" secondItem="nMH-AY-RVO" secondAttribute="top" constant="20" id="u4C-fY-B9e"/>
+                                    <constraint firstAttribute="bottom" secondItem="KoQ-XA-DmZ" secondAttribute="bottom" constant="28" id="uDN-pD-D4f"/>
+                                    <constraint firstItem="KoQ-XA-DmZ" firstAttribute="top" secondItem="iZb-ez-KYu" secondAttribute="bottom" constant="44" id="uDY-ak-7OH"/>
                                     <constraint firstAttribute="bottom" secondItem="iZb-ez-KYu" secondAttribute="bottom" constant="103" id="uqJ-fk-zcC"/>
                                     <constraint firstItem="iZb-ez-KYu" firstAttribute="top" secondItem="nMH-AY-RVO" secondAttribute="top" constant="527" id="vHW-D4-dwT"/>
+                                    <constraint firstItem="KoQ-XA-DmZ" firstAttribute="leading" secondItem="nMH-AY-RVO" secondAttribute="leading" constant="35" id="wLh-HW-KBK"/>
+                                    <constraint firstItem="8Ld-UW-ZD7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KoQ-XA-DmZ" secondAttribute="trailing" constant="8" symbolic="YES" id="wpf-4V-ICp"/>
                                     <constraint firstItem="DSc-2t-aOr" firstAttribute="top" secondItem="4be-um-qJs" secondAttribute="bottom" constant="63" id="xUZ-ug-XmN"/>
                                     <constraint firstItem="DSc-2t-aOr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nMH-AY-RVO" secondAttribute="leading" id="xjw-Ao-0rv"/>
                                 </constraints>
@@ -111,20 +136,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.44091010093688965" green="0.96845871210098267" blue="0.72736680507659912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="nMH-AY-RVO" secondAttribute="trailing" id="6pI-MC-MJx"/>
-                            <constraint firstItem="nMH-AY-RVO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Tw-0e-HKi"/>
+                            <constraint firstItem="nMH-AY-RVO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-1" id="1lR-Yk-iAt"/>
                             <constraint firstItem="nMH-AY-RVO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="EDj-UK-vV8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nMH-AY-RVO" secondAttribute="bottom" constant="7" id="hlF-P5-mvw"/>
-                            <constraint firstItem="nMH-AY-RVO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nQV-U4-7ke"/>
+                            <constraint firstItem="nMH-AY-RVO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-1" id="jKH-K5-oHN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="datePicker" destination="iZb-ez-KYu" id="3Hk-9L-e8Y"/>
+                        <outlet property="doneButton" destination="x5z-DE-udk" id="arH-Xn-ZBu"/>
                         <outlet property="label" destination="DSc-2t-aOr" id="eh2-Ye-8oY"/>
                         <outlet property="segmentedControl" destination="4be-um-qJs" id="Zxv-89-7WC"/>
                         <outlet property="slider" destination="xj4-i5-Bf6" id="WfB-fX-yO9"/>
+                        <outlet property="switchLabel" destination="KoQ-XA-DmZ" id="dXB-zf-XaS"/>
                         <outlet property="textField" destination="hoY-cy-ady" id="RZe-7R-IHU"/>
                     </connections>
                 </viewController>

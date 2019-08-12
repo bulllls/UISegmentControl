@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,18 @@
 		440C0D3922FFFA4A00F3A15C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 440C0D3822FFFA4A00F3A15C /* Assets.xcassets */; };
 		440C0D3C22FFFA4A00F3A15C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440C0D3A22FFFA4A00F3A15C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		44A005992301A0EE00D43943 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.metal;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# metal\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		440C0D2E22FFFA4900F3A15C /* UISegmentedControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISegmentedControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +88,7 @@
 				440C0D2C22FFFA4900F3A15C /* Resources */,
 			);
 			buildRules = (
+				44A005992301A0EE00D43943 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -100,7 +113,7 @@
 				};
 			};
 			buildConfigurationList = 440C0D2922FFFA4900F3A15C /* Build configuration list for PBXProject "UISegmentedControl" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -285,6 +298,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NNL835AXGA;
 				INFOPLIST_FILE = UISegmentedControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NNL835AXGA;
 				INFOPLIST_FILE = UISegmentedControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
